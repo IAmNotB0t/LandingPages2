@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -18,14 +21,18 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(7, 36, 84);
+    position: sticky;
+    top: 0;
 }
 
 .navlinks {
-    width: 300px;
+    width: 500px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
+    margin: auto 0px;
+    
 
 }
 
@@ -33,12 +40,21 @@ a {
     margin: auto;
     flex: 1 1 0;
     text-align: center;
+    
+    
 
 
 }
 
 .navlinks li a {
     color: aliceblue;
+    transition: all 0.2s ease-in;
+}
+
+li a:hover {
+    color: red;
+    font-size: 23px;
+    
 }
 
 
@@ -57,6 +73,7 @@ a {
     padding: 30px;
     gap: 20px;
     height: 300px;
+    
 }
 
 .parainfo {
@@ -71,6 +88,16 @@ a {
     border-radius: 7px;
     width: 100px;
     height: 28px;
+    
+}
+
+.parainfo button:hover {
+    background-color: rgb(17, 104, 180);
+    box-shadow: 2px 1px 3px grey;
+}
+
+.parainfo button a {
+    color: aliceblue;
 }
 
 .imgslides {
@@ -96,6 +123,7 @@ a {
 .Songrank h2 {
     margin-bottom: 50px;
     font-weight: 1000;
+    padding-top: 10px;
 }
 
 .songlist {
@@ -113,9 +141,10 @@ a {
 .songlist img {
     width: 100px;
     height: 100px;
-    border: 5px;
-    border-color: wheat;
+    /*border: 1.5px solid rgb(23, 26, 223); */
     border-radius: 10px;
+    box-shadow: 3px 2px 5px rgb(63, 60, 60);
+
 }
 
 .songlist div {
@@ -183,6 +212,7 @@ a {
 
 .gimmemoney button:hover {
     background-color: rgb(135, 130, 118);
+    box-shadow: 2px 1px 3px grey;
     
 }
 
@@ -197,12 +227,10 @@ a {
     
 }
 
-li a:hover {
-    color: red;
-    font-weight: bold;
-}
+
 
 a:visited {
     color: black;
     
 }
+
